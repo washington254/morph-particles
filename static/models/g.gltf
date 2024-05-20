@@ -1,0 +1,155 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.6.16",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Ukulele_01"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Ukulele_01",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Circle.015",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "Ukulele_01_nor_gl",
+      "uri": "textures/Ukulele_01_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "Ukulele_01_diff",
+      "uri": "textures/Ukulele_01_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "Ukulele_01_metallic-Ukulele_01_roughness",
+      "uri": "textures/Ukulele_01_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8235,
+      "max": [
+        0.08893056213855743,
+        0.5270119309425354,
+        0.028751812875270844
+      ],
+      "min": [
+        -0.08893050253391266,
+        0.000049248337745666504,
+        -0.02201041579246521
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8235,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8235,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 26736,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 98820,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 98820,
+      "byteOffset": 98820
+    },
+    {
+      "buffer": 0,
+      "byteLength": 65880,
+      "byteOffset": 197640
+    },
+    {
+      "buffer": 0,
+      "byteLength": 53472,
+      "byteOffset": 263520
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 316992,
+      "uri": "Ukulele_01.bin"
+    }
+  ]
+}

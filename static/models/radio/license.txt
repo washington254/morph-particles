@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sony Boombox Photoscan MEDPOLY
+* source:	https://sketchfab.com/3d-models/sony-boombox-photoscan-medpoly-e99ef81d189148dca5544f0cb7731084
+* author:	EvanLegrand (https://sketchfab.com/evan4129)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sony Boombox Photoscan MEDPOLY" (https://sketchfab.com/3d-models/sony-boombox-photoscan-medpoly-e99ef81d189148dca5544f0cb7731084) by EvanLegrand (https://sketchfab.com/evan4129) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

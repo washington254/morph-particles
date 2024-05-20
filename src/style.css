@@ -1,0 +1,254 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    /*-ms-touch-action: none;*/
+    /*touch-action: none;*/
+}
+
+html,
+body
+{
+    background-color: black;
+    overflow: hidden;
+}
+
+
+/*.wrapper {*/
+/*    color: white;*/
+/*    padding : 20px;*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    transition: all .5s linear;*/
+/*    transform-origin:0 0;*/
+/*    transform: translate3d(0px, 0px, 0px);*/
+/*    -webkit-backface-visibility: hidden;*/
+/*    -moz-backface-visibility: hidden;*/
+/*    -ms-backface-visibility: hidden;*/
+/*    backface-visibility: hidden;*/
+/*    -webkit-perspective: 1000;*/
+/*    -moz-perspective: 1000;*/
+/*    -ms-perspective: 1000;*/
+/*    perspective: 1000;*/
+
+/*    -webkit-box-sizing: border-box;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+/********************* Preloader CSS *********************/
+
+/********************* Preloader CSS *********************/
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.equalizer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.bar {
+    width: 30px;
+    background: linear-gradient(to top, green, yellow, red);
+    animation: bounce 1s infinite ease-in-out, glow 1.5s infinite ease-in-out;
+}
+
+/* Adding staggered animation delay for 20 bars */
+.bar:nth-child(1) { animation-delay: 0.1s, 0.1s; }
+.bar:nth-child(2) { animation-delay: 0.2s, 0.2s; }
+.bar:nth-child(3) { animation-delay: 0.3s, 0.3s; }
+.bar:nth-child(4) { animation-delay: 0.4s, 0.4s; }
+.bar:nth-child(5) { animation-delay: 0.5s, 0.5s; }
+.bar:nth-child(6) { animation-delay: 0.6s, 0.6s; }
+.bar:nth-child(7) { animation-delay: 0.7s, 0.7s; }
+.bar:nth-child(8) { animation-delay: 0.8s, 0.8s; }
+.bar:nth-child(9) { animation-delay: 0.9s, 0.9s; }
+.bar:nth-child(10) { animation-delay: 1s, 1s; }
+.bar:nth-child(11) { animation-delay: 1.1s, 1.1s; }
+.bar:nth-child(12) { animation-delay: 1.2s, 1.2s; }
+.bar:nth-child(13) { animation-delay: 1.3s, 1.3s; }
+.bar:nth-child(14) { animation-delay: 1.4s, 1.4s; }
+.bar:nth-child(15) { animation-delay: 1.5s, 1.5s; }
+.bar:nth-child(16) { animation-delay: 1.6s, 1.6s; }
+.bar:nth-child(17) { animation-delay: 1.7s, 1.7s; }
+.bar:nth-child(18) { animation-delay: 1.8s, 1.8s; }
+.bar:nth-child(19) { animation-delay: 1.9s, 1.9s; }
+.bar:nth-child(20) { animation-delay: 2s, 2s; }
+
+@keyframes bounce {
+    0%, 100% {
+        height: 20%;
+    }
+    50% {
+        height: 100%;
+    }
+}
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+
+.preloaded #preloader {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.preloaded #preloader .bar {
+    animation: none;
+}
+
+/********************* Preloader CSS *********************/
+
+/********************* Preloader CSS *********************/
+
+
+/********************* Play  *********************/
+#play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 1.0s ease-in;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #555555;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#play-button:hover {
+    background-color: #333333;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -48%);
+}
+
+#play-icon {
+    margin-right: 5px;
+}
+
+#play-button.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+/********************* End Play *********************/
+
+/********************* Sections *********************/
+.wrapper {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.smooth {
+    display: block;
+    position: relative;
+    overflow: hidden auto;
+    will-change: transform;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 100dvh;
+    position: relative;
+    font-family: 'Jost Medium', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 6vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*pointer-events: none;*/
+}
+
+section:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+.content {
+    text-align: center !important;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 8vmin;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 3vmin;
+    margin-top: 10px;
+    color: #ffcccb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#fake-scroll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto;
+    top: 0px;
+    left: 0px;
+}
+
+/********************* End Sections *********************/
+
